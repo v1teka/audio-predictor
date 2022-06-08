@@ -1,0 +1,128 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.root {
+    padding: 80px 240px;
+    box-shadow: 0px -46px 24px -19px white inset;
+}
+
+.message {
+    font-size: 40px;
+}
+
+.button {
+    background-color: white;
+    border: 1px solid black;
+    padding: 16px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 32px;
+    margin-block: 40px;
+    -webkit-transition: background-color 100ms linear;
+    -moz-transition: background-color 100ms linear;
+    -o-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+    transition: background-color 100ms linear;
+}
+
+.good {
+    background-color: #e2ffea;
+}
+
+.good .button:hover {
+    background-color: #87e09c;
+}
+
+.good .button:active {
+    background-color: #53705a;
+    color: white;
+}
+
+.bad {
+    background-color: #ffe2e2;
+}
+
+.bad .button:hover {
+    background-color: #ffbdbd;
+}
+
+.bad .button:active {
+    background-color: #705353;
+    color: white;
+}
+
+.emoji {
+    font-size: 200px;
+    margin: 0;
+}
+
+.loader {
+    padding: 80px 60px !important;
+}
+
+.loader > div {
+    align-items: baseline;
+}
+
+.loader svg {
+    display: none;
+}
+
+.loader div::before {
+    content: "🎵";
+    font-size: 80px;
+}
+
+.loader span.file-types {
+    font-size: 16px !important;
+}
+
+.loader span:not(.file-types) {
+    font-size: 24px !important;
+}
+
+.confidence {
+    left: 450px;
+    font-size: 440px;
+    position: absolute;
+    top: 100px;
+    white-space: nowrap;
+    opacity: 0.05;
+    margin: 0;
+}
